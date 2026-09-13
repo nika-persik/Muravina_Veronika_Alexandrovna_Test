@@ -1,0 +1,48 @@
+﻿<Page x:Class="WPFBankID.ChangeDataPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WPFBankID"
+      mc:Ignorable="d" 
+      d:DesignHeight="700" d:DesignWidth="595"
+      Title="Изменение данных">
+
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="300">
+
+            <StackPanel HorizontalAlignment="Center" Margin="0 0 0 10">
+                <TextBlock Style="{StaticResource BlockCommon}" Text="Фамилия" FontSize="14"></TextBlock>
+                <TextBox Width="250" Name="TBoxSurname" Height="30" FontSize="16" Margin="0 2 0 0" VerticalAlignment="Center"></TextBox>
+            </StackPanel>
+
+            <StackPanel HorizontalAlignment="Center" Margin="0 0 0 10">
+                <TextBlock Style="{StaticResource BlockCommon}" Text="Имя" FontSize="14"></TextBlock>
+                <TextBox Width="250" Name="TBoxName" Height="30" FontSize="16" Margin="0 2 0 0" VerticalAlignment="Center"></TextBox>
+            </StackPanel>
+
+            <StackPanel HorizontalAlignment="Center" Margin="0 0 0 10">
+                <TextBlock Style="{StaticResource BlockCommon}" Text="Отчество" FontSize="14"></TextBlock>
+                <TextBox Width="250" Name="TBoxPatronymic" Height="30" FontSize="16" Margin="0 2 0 0" VerticalAlignment="Center"></TextBox>
+            </StackPanel>
+
+            <StackPanel HorizontalAlignment="Center" Margin="0 0 0 10">
+                <TextBlock Style="{StaticResource BlockCommon}" Text="Дата рождения" FontSize="14"></TextBlock>
+                <TextBox Width="250" Name="TBoxBirthDate" Height="30" FontSize="16" Margin="0 2 0 0" VerticalAlignment="Center"></TextBox>
+            </StackPanel>
+
+            <StackPanel HorizontalAlignment="Center" Margin="0 0 0 10">
+                <TextBlock Style="{StaticResource BlockCommon}" Text="Серия паспорта" FontSize="14"></TextBlock>
+                <TextBox Width="250" Name="TBoxPassSeries" Height="30" FontSize="16" Margin="0 2 0 0" VerticalAlignment="Center"></TextBox>
+            </StackPanel>
+
+            <StackPanel HorizontalAlignment="Center" Margin="0 0 0 10">
+                <TextBlock Style="{StaticResource BlockCommon}" Text="Номер паспорта" FontSize="14"></TextBlock>
+                <TextBox Width="250" Name="TBoxPassNumber" Height="30" FontSize="16" Margin="0 2 0 0" VerticalAlignment="Center"></TextBox>
+            </StackPanel>
+
+            <Button Style="{StaticResource ButtonOne}" Width="250" Content="Отправить заявку" FontSize="16" Click="BtnSubmit_Click" Height="35" Margin="0,5"/>
+            <Button Style="{StaticResource ButtonOne}" Width="150" Content="Вернуться назад" Click="BtnBack_Click" Height="30"/>
+        </StackPanel>
+    </Grid>
+</Page>

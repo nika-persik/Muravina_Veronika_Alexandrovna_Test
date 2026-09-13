@@ -1,0 +1,31 @@
+﻿<Page x:Class="WPFBankID.AuthorizationPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WPFBankID"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Авторизация">
+
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <StackPanel HorizontalAlignment="Right" Margin="0 0 0 10">
+                <TextBlock Style="{StaticResource BlockCommon}" Text="Логин" FontSize="16"></TextBlock>
+                <TextBox Width="200" Height="35" Margin="0 2 0 0" Name ="TBoxLogin" FontSize="20" HorizontalAlignment="Center"></TextBox>
+            </StackPanel>
+            <StackPanel HorizontalAlignment="Right">
+                <TextBlock Style="{StaticResource BlockCommon}" Text="Пароль" FontSize="16"></TextBlock>
+                <PasswordBox Width="200" Height="35" Margin="0 2 0 0" Name ="TBoxPassword" FontSize="18"></PasswordBox>
+            </StackPanel>
+            <StackPanel>
+                <Button Style="{StaticResource ButtonOne}" Name="BtnLogin" Click="BtnLogin_Click" Content="Войти" Margin="0 20 0 0" Height="40" Width="200" FontSize="16"></Button>
+            </StackPanel>
+            <StackPanel HorizontalAlignment="Center" Margin="0 20 0 0">
+                <TextBlock HorizontalAlignment="Center" Text="Нет аккаунта?"></TextBlock>
+                <Button Style="{StaticResource ButtonOne}" Width="150" Name="BtnRegistr" Click="BtnRegistr_Click" Content="Зарегистрироваться" HorizontalAlignment="Right" Margin="0 2 0 5" Height="24" FontSize="12"></Button>
+            </StackPanel>
+        </StackPanel>
+
+    </Grid>
+</Page>
